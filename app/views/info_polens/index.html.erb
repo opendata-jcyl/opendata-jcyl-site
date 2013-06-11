@@ -1,0 +1,23 @@
+<h1>Listing info_polens</h1>
+
+<table>
+  <tr>
+    <th>Fecha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @info_polens.each do |info_polen| %>
+  <tr>
+    <td><%= info_polen.FECHA %></td>
+    <td><%= link_to 'Show', info_polen %></td>
+    <td><%= link_to 'Edit', edit_info_polen_path(info_polen) %></td>
+    <td><%= link_to 'Destroy', info_polen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Info polen', new_info_polen_path %>

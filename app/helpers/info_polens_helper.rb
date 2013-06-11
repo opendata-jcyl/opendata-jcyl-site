@@ -1,0 +1,2 @@
+module InfoPolensHelper
+end
