@@ -1,0 +1,52 @@
+<%= form_for(@info_polen) do |f| %>
+  <% if @info_polen.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@info_polen.errors.count, "error") %> prohibited this info_polen from being saved:</h2>
+
+      <ul>
+      <% @info_polen.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :FECHA %><br />
+    <%= f.text_field :FECHA %>
+  </div>
+
+<div class="field">
+    <%= f.label :ANIO %><br />
+    <%= f.text_field :ANIO %>
+  </div>
+
+<div class="field">
+    <%= f.label :SEMANA %><br />
+    <%= f.text_field :SEMANA %>
+  </div>
+
+<div class="field">
+    <%= f.label :ESTACIONES %><br />
+    <%= f.text_field :ESTACIONES %>
+  </div>
+
+<div class="field">
+    <%= f.label :TIPOS_POLINICOS %><br />
+    <%= f.text_field :TIPOS_POLINICOS %>
+  </div>
+
+<div class="field">
+    <%= f.label :PRECEDENTES %><br />
+    <%= f.text_field :PRECEDENTES %>
+  </div>
+
+<div class="field">
+    <%= f.label :PREVISION %><br />
+    <%= f.text_field :PREVISION %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
