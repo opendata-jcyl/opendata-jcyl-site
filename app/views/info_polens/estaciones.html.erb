@@ -1,0 +1,30 @@
+<h1>Detail map polen</h1>
+
+ <% @info_polens.each do |polen| %>
+    
+ 	<p>
+	  <b>Tipos polínicos:</b>
+	  <%= polen.TIPOS_POLINICOS %>
+	</p>
+	
+	<p>
+	  <b>Fecha:</b>
+	  <%= polen.FECHA %>
+	</p>
+
+	<p>
+	  <b>Precedentes:</b>
+	  <%= polen.PRECEDENTES %>
+	</p>
+
+	<p>
+	  <b>Previsión:</b>
+	  <%= polen.PREVISION %>
+	</p>
+
+<br />
+<br />
+
+<% end %>
+
+
