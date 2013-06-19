@@ -4,7 +4,7 @@ class InfoPolen
 
   store_in collection: "polen"  
   field :id, type: String
-  field :FECHA, type: String
+  field :FECHA, type: Integer
   field :ANIO, type: Integer
   field :SEMANA, type: Integer
   field :ESTACIONES, type: String

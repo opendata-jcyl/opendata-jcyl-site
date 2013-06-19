@@ -1,4 +1,11 @@
 OpendataJcylSite::Application.routes.draw do
+  
+  
+  match 'info_polens/:polen/detallepolen' => 'info_polens#detallepolen'
+  match 'info_polens/mapa' => 'info_polens#mapa'
+  match 'info_polens/tipospolen' => 'info_polens#tipospolen'
+  match 'info_polens/:estacion/:fecha/estaciones' => 'info_polens#estaciones'
+  
   resources :info_polens
 
 
